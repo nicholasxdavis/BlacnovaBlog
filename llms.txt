@@ -5,6 +5,7 @@
 ## Primary pages
 
 - [Blog home](https://blog.blacnova.net/): Index of all posts
+- [What Blacnova Does Differently](https://blog.blacnova.net/blogs/what-blacnova-does-differently/): Lighthouse, SEO ranking systems, Search Console, Bing, IndexNow
 - [Blacnova Client Dashboard](https://blog.blacnova.net/blogs/blacnova-client-dashboard/): Client portal launch for content, media, analytics, and publish
 - [Get Found Online Las Cruces](https://blog.blacnova.net/blogs/las-cruces-get-found-online/): Local search playbook for Mesilla Valley businesses
 - [Who Needs a Website](https://blog.blacnova.net/blogs/who-needs-a-website/): Who, when, why, benefits vs GBP and Instagram
@@ -22,10 +23,14 @@
 
 - Company: Blacnova Development
 - Site: https://www.blacnova.net
-- Location: Las Cruces / Mesilla, New Mexico, USA
+- Phone: (575) 270-1276
+- Location: Las Cruces, El Paso, and surrounding areas
 - Services: Website design, web development, SEO, digital tools
 
 ## Crawl
 
 - Sitemap: https://blog.blacnova.net/sitemap.xml
 - Robots: https://blog.blacnova.net/robots.txt
+- RSS: https://blog.blacnova.net/feed.xml
+- IndexNow key: https://blog.blacnova.net/46b6af37-9b5b-4e2d-aa49-f4fd87f3d164.txt
+- Company service pages: https://www.blacnova.net/las-cruces-web-design/ · https://www.blacnova.net/las-cruces-web-development/ · https://www.blacnova.net/las-cruces-seo/

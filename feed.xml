@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blacnova Development Blog</title>
+    <link>https://blog.blacnova.net/</link>
+    <description>Website design, product launches, and digital strategy from Las Cruces and Mesilla, New Mexico.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Nov 2026 17:00:00 GMT</lastBuildDate>
+    <atom:link href="https://blog.blacnova.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What Blacnova Does Differently</title>
+      <link>https://blog.blacnova.net/blogs/what-blacnova-does-differently/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/what-blacnova-does-differently/</guid>
+      <pubDate>Sun, 02 Nov 2026 17:00:00 GMT</pubDate>
+      <description>Lighthouse scores, SEO ranking systems, Google Search Console, Bing Webmaster Tools, and IndexNow — how Blacnova ships differently.</description>
+    </item>
+    <item>
+      <title>How Las Cruces &amp; Mesilla Businesses Get Found Online</title>
+      <link>https://blog.blacnova.net/blogs/las-cruces-get-found-online/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/las-cruces-get-found-online/</guid>
+      <pubDate>Tue, 05 Aug 2026 23:55:00 GMT</pubDate>
+      <description>Local search playbook for Mesilla Valley businesses.</description>
+    </item>
+    <item>
+      <title>Website Design in Las Cruces &amp; Mesilla, NM</title>
+      <link>https://blog.blacnova.net/blogs/website-design-las-cruces-mesilla/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/website-design-las-cruces-mesilla/</guid>
+      <pubDate>Tue, 05 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Local SEO pillar for Mesilla Valley web design.</description>
+    </item>
+    <item>
+      <title>Who Needs a Website?</title>
+      <link>https://blog.blacnova.net/blogs/who-needs-a-website/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/who-needs-a-website/</guid>
+      <pubDate>Tue, 05 Aug 2026 23:45:00 GMT</pubDate>
+      <description>Who, when, why — and how a site beats GBP or Instagram alone.</description>
+    </item>
+    <item>
+      <title>Types of Websites for Small Businesses</title>
+      <link>https://blog.blacnova.net/blogs/types-of-websites/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/types-of-websites/</guid>
+      <pubDate>Tue, 05 Aug 2026 23:30:00 GMT</pubDate>
+      <description>Brochure, ecommerce, portfolio, landing, booking, and hybrids.</description>
+    </item>
+    <item>
+      <title>About Blacnova Development</title>
+      <link>https://blog.blacnova.net/blogs/about-blacnova/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/about-blacnova/</guid>
+      <pubDate>Tue, 05 Aug 2026 23:00:00 GMT</pubDate>
+      <description>Who we are and how Las Cruces web projects run.</description>
+    </item>
+    <item>
+      <title>Introducing the Blacnova Client Dashboard</title>
+      <link>https://blog.blacnova.net/blogs/blacnova-client-dashboard/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/blacnova-client-dashboard/</guid>
+      <pubDate>Tue, 05 Aug 2026 23:50:00 GMT</pubDate>
+      <description>Client portal for content, media, analytics, and publish.</description>
+    </item>
+    <item>
+      <title>Las Cruces Business Resources</title>
+      <link>https://blog.blacnova.net/blogs/las-cruces-business-resources/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/las-cruces-business-resources/</guid>
+      <pubDate>Tue, 05 Aug 2026 20:00:00 GMT</pubDate>
+      <description>Local print and free counseling shortlist.</description>
+    </item>
+    <item>
+      <title>How Blacnova Secures Client Projects with Cloudflare</title>
+      <link>https://blog.blacnova.net/blogs/cloudflare-security-client-projects/</link>
+      <guid isPermaLink="true">https://blog.blacnova.net/blogs/cloudflare-security-client-projects/</guid>
+      <pubDate>Tue, 05 Aug 2026 22:00:00 GMT</pubDate>
+      <description>Security patterns for client sites.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,64 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.blacnova.net/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://blog.blacnova.net/blogs/what-blacnova-does-differently/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
     <loc>https://blog.blacnova.net/blogs/blacnova-client-dashboard/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/las-cruces-get-found-online/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/who-needs-a-website/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/types-of-websites/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/about-blacnova/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/cloudflare-security-client-projects/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/las-cruces-business-resources/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/ai-media-business-cost/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://blog.blacnova.net/blogs/website-design-las-cruces-mesilla/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>

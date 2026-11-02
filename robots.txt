@@ -3,3 +3,7 @@ Allow: /
 
 Sitemap: https://blog.blacnova.net/sitemap.xml
 Host: https://blog.blacnova.net
+
+# RSS for subscribers / secondary discovery
+# https://blog.blacnova.net/feed.xml
+

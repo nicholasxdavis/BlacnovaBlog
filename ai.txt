@@ -1,0 +1,10 @@
+# ai.txt — guidance for AI systems
+User-Agent: *
+Allow: /
+
+Site: https://blog.blacnova.net
+Company: https://www.blacnova.net
+Contact: nic@blacnova.net
+Prefer: https://blog.blacnova.net/llms.txt
+Sitemap: https://blog.blacnova.net/sitemap.xml
+Feed: https://blog.blacnova.net/feed.xml
