@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blacnova Development Blog | Website Design, Tools &amp; Insights from Las Cruces &amp; Mesilla</title>
+    <title>Web Design &amp; Local SEO Blog | Blacnova</title>
     <meta name="description" content="Blacnova Development’s blog for Las Cruces and Mesilla: website design tips, product launches, and digital strategy for Mesilla Valley businesses and builders.">
     <link rel="icon" href="logo.png" type="image/png" />
     <meta name="keywords" content="Blacnova Development, website design Las Cruces, web design Mesilla, Las Cruces web development, Mesilla Valley SEO, digital agency New Mexico, business tools">
@@ -24,12 +24,12 @@
     <meta property="og:url" content="https://blog.blacnova.net/">
     <meta property="og:title" content="Blacnova Development Blog | Website Design &amp; Insights from Las Cruces &amp; Mesilla">
     <meta property="og:description" content="Website design, product launches, and digital strategy from Blacnova Development, based in Las Cruces, serving Mesilla and Southern New Mexico.">
-    <meta property="og:image" content="https://www.blacnova.net/img/logo_white.png">
+    <meta property="og:image" content="https://www.blacnova.net/img/og-default.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://blog.blacnova.net/">
     <meta name="twitter:title" content="Blacnova Development Blog | Las Cruces &amp; Mesilla">
     <meta name="twitter:description" content="Website design, tools, and insights for Mesilla Valley businesses from Blacnova Development.">
-    <meta name="twitter:image" content="https://www.blacnova.net/img/logo_white.png">
+    <meta name="twitter:image" content="https://www.blacnova.net/img/og-default.png">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -161,7 +161,7 @@
       ]
     }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/tailwind.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -170,465 +170,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <script>
-        tailwind.config = {
-            darkMode: 'class', // Use 'class' for dark mode
-            theme: {
-                extend: {
-                    // Blog fonts (Poppins) + Header/Footer fonts (Inter)
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        heading: ['inter', 'sans-serif'] // Added from header/footer
-                    },
-                    // Merged Colors
-                    colors: {
-                        // From Blog
-                        'theme-text': '#e5e7eb',
-                        'theme-text-sec': '#9ca3af',
-                        'theme-bg': '#000000',
-                        'theme-fg': '#edecec',
-                        'theme-card': '#161618',
-                        'theme-card-hover': '#1c1c1e',
-                        'theme-accent': '#f54e00',
-                        'theme-border-01': '#edecec06',
-                        // From Header/Footer
-                        'bn-soft': '#FAF9EE',
-                        'bn-green': '#1A1A1a',
-                        'bn-white': '#EEEEEE',
-                        'bn-black': '#010101',
-                        'bn-dark': '#1A1A1A',
-                        forge: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            300: '#fdba74',
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            800: '#9a3412',
-                            900: '#7c2d12',
-                        },
-                    },
-                    // From Blog
-                    spacing: {
-                        'v1': '1.4rem',
-                        'v1/12': '0.116rem',
-                        'v3': '4.2rem',
-                        'v4': '5.6rem',
-                        'g1': '0.625rem', // Gap 'g1'
-                    },
-                    borderRadius: {
-                        'xs': '4px',
-                    },
-                    fontSize: {
-                        'type-xl-inspo': '3.25rem', // 52px
-                    },
-                    // Define the 24-column grid
-                    gridTemplateColumns: {
-                        '24': 'repeat(24, minmax(0, 1fr))',
-                    },
-                    gridColumnStart: {
-                        ...Array.from({ length: 24 }, (_, i) => i + 2).reduce((acc, i) => {
-                            acc[i] = `${i}`;
-                            return acc;
-                        }, {}),
-                        '25': '25',
-                    },
-                    gridColumnEnd: {
-                        ...Array.from({ length: 24 }, (_, i) => i + 2).reduce((acc, i) => {
-                            acc[i] = `${i}`;
-                            return acc;
-                        }, {}),
-                        '25': '25',
-                    },
-                },
-            },
-        }
-    </script>
     
-    <style type="text/tailwindcss">
-        :root {
-            --site-sticky-top: 1rem; /* For the sticky sidebar */
-            /* Define inspo colors as CSS vars for the :before border */
-            --color-theme-border-01: #edecec06;
-            --radius-xs: 4px;
-        }
-
-        /* --- Blog Styles --- */
-        body {
-            @apply font-sans bg-theme-bg text-theme-fg;
-        }
-
-        /* Typography */
-        .type-base {
-            @apply text-base font-normal;
-        }
-        .type-lg {
-            @apply text-4xl font-medium tracking-tight; /* Changed from font-medium to font-normal */
-        }
-        .md\:type-xl {
-            @apply md:text-type-xl-inspo md:font-normal md:tracking-tighter; /* Changed from font-medium to font-normal */
-        }
-        
-        /* Layout */
-        .section {
-            @apply w-full px-4 py-8;
-        }
-        .section--first-child {
-            @apply pt-32 md:pt-40; /* Increased top padding further */
-        }
-        .container {
-            /* This class wasn't in the provided snippet, but adding for context */
-            @apply max-w-7xl mx-auto;
-        }
-        
-        /* Custom grid classes */
-        .grid-cursor {
-            @apply grid grid-cols-24 gap-g1;
-        }
-        .grid-cursor-v1 {
-            @apply grid gap-v1;
-        }
-
-        /* Card component */
-        .card {
-            @apply relative block rounded-lg transition-all duration-200;
-        }
-        .card--text {
-            /* Using @apply to build the card from Tailwind utilities */
-            @apply p-6 bg-theme-card hover:bg-theme-card-hover rounded-xs;
-        }
-        .card--pagination {
-            @apply block p-4 text-right rounded-lg hover:bg-gray-800;
-            @apply block p-4 text-right rounded-xs hover:bg-theme-card-hover;
-        }
-        .card--pagination .text-theme-text-sec {
-            @apply block text-sm;
-        }
-        .card--pagination .text-theme-text {
-            @apply block text-base font-medium;
-        }
-
-        /* New: Card border from inspo */
-        .card:before {
-            content: "";
-            pointer-events: none;
-            border-radius: var(--radius-xs);
-            border: 1px solid var(--color-theme-border-01);
-            z-index: 30;
-            position: absolute;
-            inset: 0;
-        }
-
-        /* Button */
-        .btn-block {
-            @apply block w-full;
-        }
-
-        .btn-tertiary {
-             @apply text-theme-accent hover:text-theme-accent/75;
-        }
-        
-        /* Sidebar active link */
-        ul.type-base li a.text-theme-text {
-            @apply font-medium text-white border-b border-white;
-        }
-        ul.type-base li a {
-            @apply border-b border-transparent;
-        }
-
-        /* Redefine theme text colors based on inspo */
-        .text-theme-text {
-             @apply text-theme-fg;
-        }
-        .text-theme-text-sec {
-            color: #edecec99; /* 60% opacity of #edecec */
-        }
-
-        /* Fix for 'text-pretty' (not a default Tailwind class) */
-        .text-pretty {
-            text-wrap: pretty;
-        }
-
-        /* --- Styles from Header/Footer File --- */
-        /* Base styling */
-        /* body rule omitted to avoid conflict with @apply rule above */
-
-        /* Styling for the main article content */
-        .blog-content {
-            color: #d1d5db; /* Standard paragraph text */
-        }
-
-        /* Headings */
-        .blog-content h2 {
-            font-size: 1.875rem; /* 30px */
-            line-height: 2.25rem; /* 36px */
-            font-weight: 600; /* Changed from 700 (medium) to 600 (medium) */
-            color: #fff;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            letter-spacing: -0.025em;
-        }
-
-        /* Paragraphs */
-        .blog-content p {
-            font-size: 1.125rem; /* 18px */
-            line-height: 1.75rem; /* 28px */
-            margin-bottom: 1.5rem;
-        }
-
-        /* Links */
-        .blog-content a {
-            color: #d4611c; /* Custom orange */
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .blog-content a:hover {
-            text-decoration: underline;
-        }
-
-        /* Image styling */
-        .blog-content img {
-            border-radius: 0.75rem; /* 12px */
-            border: 1px solid #374151; /* gray-700 border */
-            box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.1), 0 4px 6px -2px rgba(249, 115, 22, 0.05);
-        }
-        /* Image hover overlay and preview */
-        .image-preview-container {
-            position: relative;
-            cursor: pointer;
-            display: inline-block;
-            width: 100%;
-        }
-        .image-preview-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            border-radius: 0.75rem;
-            z-index: 10;
-        }
-        .image-preview-container:hover .image-preview-overlay {
-            opacity: 1;
-            visibility: visible;
-        }
-        .image-preview-icon {
-            color: white;
-            font-size: 2.5rem;
-            z-index: 11;
-        }
-        /* Image preview modal */
-        .image-modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .image-modal-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .image-modal-content {
-            position: relative;
-            max-width: 90vw;
-            max-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .image-modal-content img {
-            max-width: 100%;
-            max-height: 90vh;
-            object-fit: contain;
-            border-radius: 0.5rem;
-            border: none;
-            box-shadow: none;
-        }
-        .image-modal-close {
-            position: absolute;
-            top: -40px;
-            right: 0;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0.5rem;
-            line-height: 1;
-        }
-        .image-modal-close:hover {
-            opacity: 0.7;
-        }
-
-        /* Table of Contents */
-        .toc {
-            border: 1px solid #374151; /* gray-700 */
-            background-color: #000; /* Black background */
-            border-radius: 0.5rem;
-            padding: 0.75rem 1rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .toc h3 {
-            font-size: 0.875rem; /* 14px - smaller */
-            font-weight: 600;
-            color: #fff; /* White text */
-            margin-bottom: 0.5rem;
-        }
-        .toc ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        .toc li {
-            margin-bottom: 0.25rem;
-        }
-        .toc a {
-            color: #d4611c; /* Custom orange for better visibility on black */
-            font-weight: 500;
-            font-size: 0.875rem; /* 14px - smaller */
-            text-decoration: none;
-        }
-        .toc a:hover {
-            color: #e67e2d; /* Lighter shade of custom orange on hover */
-            text-decoration: underline;
-        }
-
-        /* Modal Styles */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 50;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .modal-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .modal-panel {
-            background-color: #1f2937; /* gray-800 */
-            color: #f3f4f6;
-            border-radius: 0.75rem;
-            padding: 2rem;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            transform: scale(0.95);
-            opacity: 0;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-        .modal-overlay.show .modal-panel {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        /* Header/Footer Styles from styles.css */
-        html, body {
-            overflow-x: hidden;
-        }
-        .header {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            background-color: rgba(0, 0, 0, 0.85);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .header.scrolled {
-            background-color: rgba(0, 0, 0, 0.95);
-        }
-        .header-content, .logo {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .logo {
-            width: auto !important;
-            object-fit: contain;
-        }
-        .mobile-menu {
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            background-color: rgba(10, 10, 10, 0.98);
-            border-left: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .mobile-menu.open { transform: translateX(0); }
-        .mobile-menu.closed { transform: translateX(100%); }
-        .nav-link { position: relative; }
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            background-color: white;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover:after { width: 100%; }
-        .btn-primary {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
-            color: #000;
-            font-weight: 500;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-        }
-        .mobile-dropdown-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        .mobile-dropdown-content.open {
-            max-height: 500px;
-            transition: max-height 0.5s ease-in;
-        }
-        .rotate-0 {
-            transform: rotate(0deg);
-            transition: transform 0.3s ease;
-        }
-        .rotate-180 {
-            transform: rotate(180deg);
-            transition: transform 0.3s ease;
-        }
-        .uniform-img {
-            /* Ensures the image takes up 100% of the grid column's width */
-            width: 100%;
-            /* Set a fixed height for all images */
-            height: 250px; /* Adjust this value to your preferred height */
-            /* This tells the image how to fit into the specified dimensions */
-            /* 'cover' scales the image to cover the entire container */
-            object-fit: cover;
-            /* This specifies where to align the image if it's cropped. */
-            /* 'top' keeps the top of the image visible and cuts off the bottom. */
-            object-position: top;
-        }
-    </style>
 </head>
 <body class="">
 
@@ -674,7 +216,7 @@
                 
                 <div class="col-span-full md:col-start-7 md:col-end-25 lg:col-start-9 lg:col-end-25 xl:col-start-7 xl:col-end-19" id="article-list-container">
                     <article class="flex grow-1 flex-col mb-g1" data-category="company">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/what-blacnova-does-differently/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/what-blacnova-does-differently/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">What Blacnova does differently</h2>
@@ -689,7 +231,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="news">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/blacnova-client-dashboard/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/blacnova-client-dashboard/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">Introducing the Blacnova Client Dashboard</h2>
@@ -704,7 +246,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="research">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/las-cruces-get-found-online/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/las-cruces-get-found-online/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">How Las Cruces &amp; Mesilla businesses get found online</h2>
@@ -719,7 +261,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="research">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/who-needs-a-website/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/who-needs-a-website/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">Who needs a website? When, why, and benefits</h2>
@@ -734,7 +276,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="research">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/types-of-websites/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/types-of-websites/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">Types of websites: which one do you need?</h2>
@@ -749,7 +291,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="company">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/about-blacnova/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/about-blacnova/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">About Blacnova Development</h2>
@@ -764,7 +306,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="company">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/cloudflare-security-client-projects/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/cloudflare-security-client-projects/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">How we secure client projects with Cloudflare</h2>
@@ -779,7 +321,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="company">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/las-cruces-business-resources/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/las-cruces-business-resources/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <h2 class="type-base text-theme-text text-pretty font-medium">Las Cruces business resources: print, web &amp; apps</h2>
@@ -794,7 +336,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="research">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/ai-media-business-cost/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/ai-media-business-cost/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <p class="type-base text-theme-text text-pretty font-medium">The real cost of AI logos, flyers, and brand media</p>
@@ -809,7 +351,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="company">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/website-design-las-cruces-mesilla/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/website-design-las-cruces-mesilla/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <p class="type-base text-theme-text text-pretty font-medium">Website Design in Las Cruces &amp; Mesilla, NM</p>
@@ -824,7 +366,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="product">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/telelink/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/telelink/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <p class="type-base text-theme-text text-pretty font-medium">Introducing TeleLink</p>
@@ -839,7 +381,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="research">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/tiio-compare/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/tiio-compare/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <p class="type-base text-theme-text text-pretty font-medium">TIIO vs Streaming Apps</p>
@@ -854,7 +396,7 @@
                     </article>
 
                     <article class="flex grow-1 flex-col mb-g1" data-category="product">
-                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/tiio/index.html">
+                        <a class="card card--text grow-1 grid-cursor-v1 grid-cols-[1fr_auto] @container" href="blogs/tiio/">
                             <div class="flex flex-col @sm:col-start-1 @sm:col-end-2">
                                 <div class="grow-1">
                                     <p class="type-base text-theme-text text-pretty font-medium">Introducing TIIO beta</p>

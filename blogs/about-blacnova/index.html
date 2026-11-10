@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://blog.blacnova.net/blogs/about-blacnova/">
     <meta property="og:title" content="About Blacnova Development | Las Cruces Web &amp; Digital Studio">
     <meta property="og:description" content="A straight look at Blacnova Development: what we build in Las Cruces, how projects run, and who we are built to serve.">
-    <meta property="og:image" content="https://www.blacnova.net/img/logo_white.png">
+    <meta property="og:image" content="https://www.blacnova.net/img/og-default.png">
     <meta property="article:published_time" content="2026-08-05T23:00:00.000Z">
     <meta property="article:modified_time" content="2026-08-05T23:00:00.000Z">
     <meta property="article:author" content="Blacnova Development">
@@ -31,24 +31,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Blacnova Development">
     <meta name="twitter:description" content="Las Cruces web, apps, SEO, and BN Tools. How we work and what we build for Southern New Mexico.">
-    <meta name="twitter:image" content="https://www.blacnova.net/img/logo_white.png">
+    <meta name="twitter:image" content="https://www.blacnova.net/img/og-default.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        forge: { 500: '#f97316', 600: '#ea580c' }
-                    },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/css/tailwind.css">
     <style>
         body { background: #000; color: #f3f4f6; font-family: Inter, sans-serif; }
         .blog-content { color: #d1d5db; }
@@ -199,13 +187,13 @@
     }
     </script>
 </head>
-<body class="antialiased">
+<body class="blog-article antialiased">
 
     <header class="header fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto px-4">
             <div class="header-content flex justify-between items-center h-24">
                 <div class="flex items-center">
-                    <a href="../../index.html" class="flex items-center">
+                    <a href="/" class="flex items-center">
                         <img src="https://www.blacnova.net/img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20 w-auto">
                     </a>
                 </div>
@@ -257,7 +245,7 @@
                 Blacnova Development is locally owned and rooted in the Mesilla Valley. We are not a call center that redistributes your project to whoever is free this week. When you talk to us, you are talking to the people who will design, ship, and support the work.
             </p>
             <p>
-                Our bias is practical. Pretty mockups that never launch do not help a restaurant on Avenida de Mesilla or a contractor on the East Mesa. We care about pages that load, forms that deliver leads, search that finds you, and systems that stay online. Security is part of that story too. We put Cloudflare and careful engineering in front of client projects because availability and trust are part of the product. More on that in <a href="../cloudflare-security-client-projects/index.html">how we secure client projects</a>.
+                Our bias is practical. Pretty mockups that never launch do not help a restaurant on Avenida de Mesilla or a contractor on the East Mesa. We care about pages that load, forms that deliver leads, search that finds you, and systems that stay online. Security is part of that story too. We put Cloudflare and careful engineering in front of client projects because availability and trust are part of the product. More on that in <a href="/blogs/cloudflare-security-client-projects/">how we secure client projects</a>.
             </p>
 
             <h2 id="what">What we build</h2>
@@ -273,7 +261,7 @@
                 <li><strong class="text-white">Ongoing support.</strong> Updates, fixes, and a simple monthly plan after launch.</li>
             </ul>
             <p>
-                If you want the local SEO and design angle in more depth, read <a href="../website-design-las-cruces-mesilla/index.html">website design in Las Cruces and Mesilla</a>.
+                If you want the local SEO and design angle in more depth, read <a href="/blogs/website-design-las-cruces-mesilla/">website design in Las Cruces and Mesilla</a>.
             </p>
 
             <h2 id="tools">BN Tools and products we ship ourselves</h2>
@@ -323,7 +311,7 @@
                 Southern New Mexico businesses compete on place, trust, and word of mouth as much as on ads. A generic template that could belong to any city wastes that advantage. We design and write with local reality in mind: mobile traffic, “near me” search, bilingual households, tourism seasons, campus calendars around NMSU, and the difference between Mesilla Plaza foot traffic and East Mesa service radius.
             </p>
             <p>
-                We also care about keeping more of the digital economy here. Hire local print. Hire local builders when you can. Use free counseling at SBDC or SCORE when you are stuck on the business plan side. We collected a practical shortlist in our <a href="../las-cruces-business-resources/index.html">Las Cruces business resources guide</a>.
+                We also care about keeping more of the digital economy here. Hire local print. Hire local builders when you can. Use free counseling at SBDC or SCORE when you are stuck on the business plan side. We collected a practical shortlist in our <a href="/blogs/las-cruces-business-resources/">Las Cruces business resources guide</a>.
             </p>
 
             <h2 id="fit">Who we are a good fit for</h2>
@@ -365,7 +353,7 @@
 
             <h3>Do you help with branding and AI-generated logos?</h3>
             <p>
-                We help clients avoid brand choices that create legal and trust problems later. If you are tempted by a free AI logo generator as your permanent mark, read <a href="../ai-media-business-cost/index.html">the real cost of AI logos and brand media</a> before you print a thousand cards.
+                We help clients avoid brand choices that create legal and trust problems later. If you are tempted by a free AI logo generator as your permanent mark, read <a href="/blogs/ai-media-business-cost/">the real cost of AI logos and brand media</a> before you print a thousand cards.
             </p>
 
             <h2 id="next">The short version</h2>
@@ -378,22 +366,23 @@
             <p>
                 <a href="https://www.blacnova.net/#contact">Request a quote</a> ·
                 <a href="https://www.blacnova.net">Visit blacnova.net</a> ·
-                <a href="../../index.html">Back to the blog</a>
+                <a href="/">Back to the blog</a>
             </p>
         </article>
 
         <section class="mt-20" aria-labelledby="related-heading">
             <h2 id="related-heading" class="text-3xl font-semibold text-white mb-6">More from Blacnova Development</h2>
+            <p class="mb-6 text-gray-300">Explore <a class="underline" href="https://www.blacnova.net/las-cruces-web-development/">custom web development</a> and <a class="underline" href="https://www.blacnova.net/pages/projects/">recent client projects</a>.</p>
             <div class="grid gap-5">
-                <a href="../cloudflare-security-client-projects/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/cloudflare-security-client-projects/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">How we secure client projects with Cloudflare</p>
                     <p class="text-base text-gray-400 mt-2">WAF, DDoS, Turnstile, secrets, and the habits behind our security baseline.</p>
                 </a>
-                <a href="../website-design-las-cruces-mesilla/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/website-design-las-cruces-mesilla/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Website Design in Las Cruces &amp; Mesilla, NM</p>
                     <p class="text-base text-gray-400 mt-2">What strong local website design looks like for Mesilla Valley businesses.</p>
                 </a>
-                <a href="../las-cruces-business-resources/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/las-cruces-business-resources/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Las Cruces business resources</p>
                     <p class="text-base text-gray-400 mt-2">Local printers, free counseling, and digital next steps for owners in the valley.</p>
                 </a>
@@ -401,7 +390,7 @@
         </section>
 
         <footer class="mt-16 pt-8 border-t border-white/20 text-center text-white/60">
-            <a href="../../index.html" aria-label="Blacnova Development Blog home">
+            <a href="/" aria-label="Blacnova Development Blog home">
                 <img src="https://www.blacnova.net/img/bn.png" alt="Blacnova Development" class="h-16 mx-auto mb-4" width="64" height="64">
             </a>
             <p class="text-white/70">Founded in Las Cruces, New Mexico.</p>

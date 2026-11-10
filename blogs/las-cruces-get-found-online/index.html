@@ -38,17 +38,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { forge: { 500: '#f97316', 600: '#ea580c' } },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/css/tailwind.css">
     <style>
         body { background: #000; color: #f3f4f6; font-family: Inter, sans-serif; }
         .blog-content { color: #d1d5db; }
@@ -197,13 +187,13 @@
     }
     </script>
 </head>
-<body class="antialiased">
+<body class="blog-article antialiased">
 
     <header class="header fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto px-4">
             <div class="header-content flex justify-between items-center h-24">
                 <div class="flex items-center">
-                    <a href="../../index.html" class="flex items-center">
+                    <a href="/" class="flex items-center">
                         <img src="https://www.blacnova.net/img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20 w-auto">
                     </a>
                 </div>
@@ -266,7 +256,7 @@
 
             <h2 id="path">The path from Maps to a call</h2>
             <figure>
-                <img src="../../img/las-cruces-get-found/las-cruces-local-discovery.png" alt="Local discovery path: Google Search and Maps, reviews and photos, business website, then call or book" width="1200" height="675" loading="lazy">
+                <img src="https://blacnova-cdn.pages.dev/v1/blog/las-cruces-get-found/las-cruces-local-discovery.webp" alt="Local discovery path: Google Search and Maps, reviews and photos, business website, then call or book" width="1200" height="800" loading="lazy">
                 <figcaption>Typical path: find you on Google, check proof, visit your site, then call or book.</figcaption>
             </figure>
             <p>
@@ -296,7 +286,7 @@
                 <li>Link your real website. Google’s auto site is not a strategy.</li>
             </ul>
             <p>
-                Profile suspensions happen. Keep your website as backup so a listing glitch does not erase you. We covered that tradeoff in <a href="../who-needs-a-website/index.html">who needs a website</a>.
+                Profile suspensions happen. Keep your website as backup so a listing glitch does not erase you. We covered that tradeoff in <a href="/blogs/who-needs-a-website/">who needs a website</a>.
             </p>
 
             <h2 id="website">Your website: where trust finishes</h2>
@@ -304,7 +294,7 @@
                 After reviews, many people click through to the business site. That page has to load fast on a phone on I-10 traffic or a slow café Wi-Fi near the Plaza. It should show what you do, where you serve, and how to reach you without hunting.
             </p>
             <p>
-                For most Mesilla Valley service businesses, start with a clear brochure or lead-gen site. Match the type to how people buy. See <a href="../types-of-websites/index.html">types of websites</a> and our <a href="../website-design-las-cruces-mesilla/index.html">Las Cruces and Mesilla website design guide</a> for what “good” looks like locally.
+                For most Mesilla Valley service businesses, start with a clear brochure or lead-gen site. Match the type to how people buy. See <a href="/blogs/types-of-websites/">types of websites</a> and our <a href="/blogs/website-design-las-cruces-mesilla/">Las Cruces and Mesilla website design guide</a> for what “good” looks like locally.
             </p>
             <p>
                 Minimum trust stack on the site:
@@ -381,7 +371,7 @@
                 We are not a national template mill. Local context matters: bilingual households, tourism spikes around Mesilla, campus calendars, and service areas that jump from city lots to county roads. The site should reflect that.
             </p>
             <p>
-                For free local counseling and print partners, see our <a href="../las-cruces-business-resources/index.html">Las Cruces business resources</a> shortlist. For who we are and how projects run, read <a href="../about-blacnova/index.html">About Blacnova Development</a>.
+                For free local counseling and print partners, see our <a href="/blogs/las-cruces-business-resources/">Las Cruces business resources</a> shortlist. For who we are and how projects run, read <a href="/blogs/about-blacnova/">About Blacnova Development</a>.
             </p>
 
             <div class="cta-box">
@@ -432,24 +422,25 @@
             </p>
             <p>
                 <a href="https://www.blacnova.net/#contact">Request a quote</a> ·
-                <a href="../website-design-las-cruces-mesilla/index.html">Local website design guide</a> ·
-                <a href="../who-needs-a-website/index.html">Who needs a website</a> ·
-                <a href="../../index.html">Back to the Blacnova Development blog</a>
+                <a href="/blogs/website-design-las-cruces-mesilla/">Local website design guide</a> ·
+                <a href="/blogs/who-needs-a-website/">Who needs a website</a> ·
+                <a href="/">Back to the Blacnova Development blog</a>
             </p>
         </article>
 
         <section class="mt-20" aria-labelledby="related-heading">
             <h2 id="related-heading" class="text-3xl font-semibold text-white mb-6">More from Blacnova Development</h2>
+            <p class="mb-6 text-gray-300">Explore <a class="underline" href="https://www.blacnova.net/las-cruces-seo/">local SEO services</a> and <a class="underline" href="https://www.blacnova.net/las-cruces-web-design/">website design for local businesses</a>.</p>
             <div class="grid gap-5">
-                <a href="../website-design-las-cruces-mesilla/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/website-design-las-cruces-mesilla/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Website Design in Las Cruces &amp; Mesilla, NM</p>
                     <p class="text-base text-gray-400 mt-2">What strong local website design looks like for Mesilla Valley businesses.</p>
                 </a>
-                <a href="../who-needs-a-website/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/who-needs-a-website/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Who needs a website?</p>
                     <p class="text-base text-gray-400 mt-2">When, why, and benefits vs Google and Instagram alone.</p>
                 </a>
-                <a href="../las-cruces-business-resources/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/las-cruces-business-resources/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Las Cruces business resources</p>
                     <p class="text-base text-gray-400 mt-2">Local printers, free counseling, and digital next steps.</p>
                 </a>
@@ -457,7 +448,7 @@
         </section>
 
         <footer class="mt-16 pt-8 border-t border-white/20 text-center text-white/60">
-            <a href="../../index.html" aria-label="Blacnova Development Blog home">
+            <a href="/" aria-label="Blacnova Development Blog home">
                 <img src="https://www.blacnova.net/img/bn.png" alt="Blacnova Development" class="h-16 mx-auto mb-4" width="64" height="64">
             </a>
             <p class="text-white/70">Founded in Las Cruces, New Mexico.</p>

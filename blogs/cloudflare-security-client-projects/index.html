@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://blog.blacnova.net/blogs/cloudflare-security-client-projects/">
     <meta property="og:title" content="How Blacnova Development Secures Client Projects with Cloudflare">
     <meta property="og:description" content="Our practical security stack for client websites and apps: Cloudflare at the edge, safe secrets, and habits that prevent common breaches.">
-    <meta property="og:image" content="https://www.blacnova.net/img/logo_white.png">
+    <meta property="og:image" content="https://www.blacnova.net/img/og-default.png">
     <meta property="article:published_time" content="2026-08-05T22:00:00.000Z">
     <meta property="article:modified_time" content="2026-08-05T22:00:00.000Z">
     <meta property="article:author" content="Blacnova Development">
@@ -31,24 +31,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How Blacnova Development Secures Client Projects with Cloudflare">
     <meta name="twitter:description" content="WAF, DDoS, Turnstile, Workers secrets, and the security habits we build into every client project.">
-    <meta name="twitter:image" content="https://www.blacnova.net/img/logo_white.png">
+    <meta name="twitter:image" content="https://www.blacnova.net/img/og-default.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        forge: { 500: '#f97316', 600: '#ea580c' }
-                    },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/css/tailwind.css">
     <style>
         body { background: #000; color: #f3f4f6; font-family: Inter, sans-serif; }
         .blog-content { color: #d1d5db; }
@@ -186,13 +174,13 @@
     }
     </script>
 </head>
-<body class="antialiased">
+<body class="blog-article antialiased">
 
     <header class="header fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto px-4">
             <div class="header-content flex justify-between items-center h-24">
                 <div class="flex items-center">
-                    <a href="../../index.html" class="flex items-center">
+                    <a href="/" class="flex items-center">
                         <img src="https://www.blacnova.net/img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20 w-auto">
                     </a>
                 </div>
@@ -387,19 +375,19 @@
             </p>
             <p>
                 <a href="https://www.blacnova.net/#contact">Request a quote</a> ·
-                <a href="../website-design-las-cruces-mesilla/index.html">Las Cruces web design guide</a> ·
-                <a href="../../index.html">Back to the blog</a>
+                <a href="/blogs/website-design-las-cruces-mesilla/">Las Cruces web design guide</a> ·
+                <a href="/">Back to the blog</a>
             </p>
         </article>
 
         <section class="mt-20" aria-labelledby="related-heading">
             <h2 id="related-heading" class="text-3xl font-semibold text-white mb-6">More from Blacnova Development</h2>
             <div class="grid gap-5">
-                <a href="../las-cruces-business-resources/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/las-cruces-business-resources/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Las Cruces business resources</p>
                     <p class="text-base text-gray-400 mt-2">Local printers, free counseling, and website or app help for Mesilla Valley businesses.</p>
                 </a>
-                <a href="../website-design-las-cruces-mesilla/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/website-design-las-cruces-mesilla/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Website Design in Las Cruces &amp; Mesilla, NM</p>
                     <p class="text-base text-gray-400 mt-2">What strong local website design looks like for businesses in the valley.</p>
                 </a>
@@ -407,7 +395,7 @@
         </section>
 
         <footer class="mt-16 pt-8 border-t border-white/20 text-center text-white/60">
-            <a href="../../index.html" aria-label="Blacnova Development Blog home">
+            <a href="/" aria-label="Blacnova Development Blog home">
                 <img src="https://www.blacnova.net/img/bn.png" alt="Blacnova Development" class="h-16 mx-auto mb-4" width="64" height="64">
             </a>
             <p class="text-white/70">Web design, apps, and secure delivery in Las Cruces and Mesilla, New Mexico.</p>

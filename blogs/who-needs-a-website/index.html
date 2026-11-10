@@ -36,17 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { forge: { 500: '#f97316', 600: '#ea580c' } },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/css/tailwind.css">
     <style>
         body { background: #000; color: #f3f4f6; font-family: Inter, sans-serif; }
         .blog-content { color: #d1d5db; }
@@ -190,13 +180,13 @@
     }
     </script>
 </head>
-<body class="antialiased">
+<body class="blog-article antialiased">
 
     <header class="header fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto px-4">
             <div class="header-content flex justify-between items-center h-24">
                 <div class="flex items-center">
-                    <a href="../../index.html" class="flex items-center">
+                    <a href="/" class="flex items-center">
                         <img src="https://www.blacnova.net/img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20 w-auto">
                     </a>
                 </div>
@@ -282,7 +272,7 @@
 
             <h2 id="vs">Website vs Google Business Profile vs Instagram</h2>
             <figure>
-                <img src="../../img/who-needs-website/website-vs-gbp-social.png" alt="Comparison of website, Google Business Profile, and Instagram: ownership, discovery, and what each does well" width="1200" height="675" loading="lazy">
+                <img src="https://blacnova-cdn.pages.dev/v1/blog/who-needs-website/website-vs-gbp-social.webp" alt="Comparison of website, Google Business Profile, and Instagram: ownership, discovery, and what each does well" width="1200" height="800" loading="lazy">
                 <figcaption>Different jobs: Maps finds you, social shows work, the website is the home you own.</figcaption>
             </figure>
             <table>
@@ -384,7 +374,7 @@
 
             <h3>8. Room to grow into the right type</h3>
             <p>
-                Start as a brochure. Add booking, a few products, or a blog when revenue justifies it. That path is covered in our <a href="../types-of-websites/index.html">types of websites guide</a>. The benefit of starting with a site is that you have somewhere to grow into.
+                Start as a brochure. Add booking, a few products, or a blog when revenue justifies it. That path is covered in our <a href="/blogs/types-of-websites/">types of websites guide</a>. The benefit of starting with a site is that you have somewhere to grow into.
             </p>
 
             <h2 id="when">When to get one</h2>
@@ -410,7 +400,7 @@
                 <li>How to contact or book</li>
             </ul>
             <p>
-                For many Las Cruces service businesses that is a small brochure or lead-gen site linked from Google Business Profile. Add booking when scheduling pain shows up. Add ecommerce when people should buy without a conversation. Match the <a href="../types-of-websites/index.html">website type</a> to how people buy, then stop overbuilding.
+                For many Las Cruces service businesses that is a small brochure or lead-gen site linked from Google Business Profile. Add booking when scheduling pain shows up. Add ecommerce when people should buy without a conversation. Match the <a href="/blogs/types-of-websites/">website type</a> to how people buy, then stop overbuilding.
             </p>
 
             <div class="cta-box">
@@ -467,24 +457,24 @@
             </p>
             <p>
                 <a href="https://www.blacnova.net/#contact">Request a quote</a> ·
-                <a href="../types-of-websites/index.html">Types of websites</a> ·
-                <a href="../website-design-las-cruces-mesilla/index.html">Las Cruces web design guide</a> ·
-                <a href="../../index.html">Back to the Blacnova Development blog</a>
+                <a href="/blogs/types-of-websites/">Types of websites</a> ·
+                <a href="/blogs/website-design-las-cruces-mesilla/">Las Cruces web design guide</a> ·
+                <a href="/">Back to the Blacnova Development blog</a>
             </p>
         </article>
 
         <section class="mt-20" aria-labelledby="related-heading">
             <h2 id="related-heading" class="text-3xl font-semibold text-white mb-6">More from Blacnova Development</h2>
             <div class="grid gap-5">
-                <a href="../types-of-websites/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/types-of-websites/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Types of websites</p>
                     <p class="text-base text-gray-400 mt-2">Brochure, ecommerce, portfolio, landing, booking, and hybrids.</p>
                 </a>
-                <a href="../website-design-las-cruces-mesilla/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/website-design-las-cruces-mesilla/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">Website Design in Las Cruces &amp; Mesilla, NM</p>
                     <p class="text-base text-gray-400 mt-2">What strong local website design looks like for Mesilla Valley businesses.</p>
                 </a>
-                <a href="../about-blacnova/index.html" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
+                <a href="/blogs/about-blacnova/" class="block p-6 rounded-lg bg-[#161618] hover:bg-[#1c1c1e] border border-white/5">
                     <p class="text-base font-medium text-white">About Blacnova Development</p>
                     <p class="text-base text-gray-400 mt-2">Who we are and how projects run.</p>
                 </a>
@@ -492,7 +482,7 @@
         </section>
 
         <footer class="mt-16 pt-8 border-t border-white/20 text-center text-white/60">
-            <a href="../../index.html" aria-label="Blacnova Development Blog home">
+            <a href="/" aria-label="Blacnova Development Blog home">
                 <img src="https://www.blacnova.net/img/bn.png" alt="Blacnova Development" class="h-16 mx-auto mb-4" width="64" height="64">
             </a>
             <p class="text-white/70">Founded in Las Cruces, New Mexico.</p>
